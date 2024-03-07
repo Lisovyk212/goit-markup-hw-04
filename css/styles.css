@@ -37,14 +37,18 @@ img {
 address {
   font-style: normal;
 }
+.first {
+  border-bottom: 1px solid #e7e9fc
+}
 .container {
-  width: 1128px;
+  width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
 }
 .header-container {
   display: flex;
   align-items: center;
+  /* border-bottom: 1px solid #e7e9fc */
 }
 .header {
   display: flex;
@@ -111,7 +115,9 @@ address {
   width: 1440px;
   height: 600px;
   display: block;
-  margin-bottom: 120px;
+}
+.main-container {
+  padding: 188px 0;
 }
 .main-title {
   font-weight: 700;
@@ -120,10 +126,7 @@ address {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  display: block;
-  margin: 0 auto;
-  padding-top: 188px;
-  padding-bottom: 48px;
+  max-width: 496px;
 }
 .main-btn {
   background: #4d5ae5;
@@ -135,31 +138,29 @@ address {
   color: #fff;
   cursor: pointer;
   display: block;
-  margin: 0 auto;
-  border-radius: 4px;
-  padding: 16px 32px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  min-width: 169px 
 }
 .main-btn:hover,
 .main-btn:focus {
   background: #404bbf;
 }
 /* -------------------Content----------------------------- */
+.hidden {
+  visibility: hidden;
+}
 .content-list {
-  margin-bottom: 120px;
+  display: flex;
+  gap: 24px;
+  padding: 120px 0;
 }
-.content-list-blok {
-  display: inline-block;
-  width: 264px;
-  height: 104px;
-}
+
 .content-list-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-bottom: 8px;
+  margin-bottom: 8px; 
 }
 .content-list-items {
   font-size: 16px;
@@ -172,6 +173,9 @@ address {
   width: 1440px;
   height: 732px;
 }
+.team-container {
+  padding: 120px 0;
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -180,13 +184,20 @@ address {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .team-list {
   background-color: #ffffff;
   display: flex;
   gap: 24px;
+}
+.team-list-blok {
+  border-radius: 0px 0px 4px 4px; 
+}
+.team-list-text {
+  padding: 32px 0;
+  text-align: center;
+
 }
 .team-list-title {
   font-weight: 500;
@@ -195,16 +206,18 @@ address {
   letter-spacing: 0.02em;
   background-color: #ffffff;
   color: #2e2f42;
-  text-align: center;
+  margin-bottom: 8px;
 }
-.team-list-item {
+.team-list-items {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   background-color: #ffffff;
-  text-align: center;
 }
 /* -------------------Our Portfolio----------------------------- */
+.portfolio-container{
+  padding: 120px 0;
+}
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -213,19 +226,18 @@ address {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px; 
 }
-.portfolio-first,
-.portfolio-second {
+.portfolio-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  column-gap: 24px; 
+  row-gap: 48px
 }
-.portfolio-first {
-  padding-bottom: 48px;
-}
-.portfolio-second {
-  padding-bottom: 120px;
+.portfolio-list-blok {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc; 
+  border-top: none;
 }
 .portfolio-list-title {
   font-weight: 500;
@@ -233,8 +245,9 @@ address {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px
 }
-.portfolio-list-item {
+.portfolio-list-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -246,7 +259,7 @@ address {
   height: 312px;
 }
 .footer-container {
-  padding-top: 100px;
+  padding: 100px 0;
 }
 .footer-link {
   font-family: "Raleway", sans-serif;
@@ -256,6 +269,8 @@ address {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .footer-link span {
   color: #f4f4fd;
@@ -265,6 +280,5 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  padding-top: 16px;
 }
 /*  */
