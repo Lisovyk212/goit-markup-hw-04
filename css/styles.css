@@ -165,7 +165,9 @@ address {
   display: flex;
   gap: 24px;
 }
-
+.content-list-blok {
+  width: calc((100% - 72px) / 4);
+}
 .content-list-title {
   font-weight: 500;
   font-size: 20px;
