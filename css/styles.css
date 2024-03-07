@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -7,9 +13,42 @@ body {
 a {
   text-decoration: none;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 ul,
 ol {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+address {
+  font-style: normal;
+}
+.container {
+  width: 1128px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.header {
+  display: flex;
+  align-items: center;
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -19,10 +58,14 @@ ol {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
-
 .logo span {
   color: #2e2f42;
+}
+.header-list {
+  display: flex;
+  gap: 40px;
 }
 .header-link {
   font-weight: 500;
@@ -30,6 +73,8 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0px;
+  display: block;
 }
 .header-link:hover,
 .header-link:focus {
@@ -42,11 +87,14 @@ ol {
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
-
 .address {
   font-style: normal;
+  margin-left: auto;
 }
-
+.address-list {
+  display: flex;
+  gap: 40px;
+}
 .address-link {
   font-size: 16px;
   line-height: 1.5;
@@ -60,6 +108,10 @@ ol {
 /* ---------------------TITLE------------------------------ */
 .main {
   background: #2e2f42;
+  width: 1440px;
+  height: 600px;
+  display: block;
+  margin-bottom: 120px;
 }
 .main-title {
   font-weight: 700;
@@ -68,6 +120,10 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding-top: 188px;
+  padding-bottom: 48px;
 }
 .main-btn {
   background: #4d5ae5;
@@ -78,18 +134,32 @@ ol {
   letter-spacing: 0.04em;
   color: #fff;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 16px 32px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .main-btn:hover,
 .main-btn:focus {
   background: #404bbf;
 }
 /* -------------------Content----------------------------- */
+.content-list {
+  margin-bottom: 120px;
+}
+.content-list-blok {
+  display: inline-block;
+  width: 264px;
+  height: 104px;
+}
 .content-list-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-bottom: 8px;
 }
 .content-list-items {
   font-size: 16px;
@@ -99,6 +169,8 @@ ol {
 /* -------------------Our Team----------------------------- */
 .team {
   background: #f4f4fd;
+  width: 1440px;
+  height: 732px;
 }
 .team-title {
   font-weight: 700;
@@ -108,9 +180,13 @@ ol {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
 .team-list {
   background-color: #ffffff;
+  display: flex;
+  gap: 24px;
 }
 .team-list-title {
   font-weight: 500;
@@ -119,12 +195,14 @@ ol {
   letter-spacing: 0.02em;
   background-color: #ffffff;
   color: #2e2f42;
+  text-align: center;
 }
 .team-list-item {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   background-color: #ffffff;
+  text-align: center;
 }
 /* -------------------Our Portfolio----------------------------- */
 .portfolio-title {
@@ -135,8 +213,20 @@ ol {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  padding-top: 120px;
+  padding-bottom: 72px;
 }
-
+.portfolio-first,
+.portfolio-second {
+  display: flex;
+  gap: 24px;
+}
+.portfolio-first {
+  padding-bottom: 48px;
+}
+.portfolio-second {
+  padding-bottom: 120px;
+}
 .portfolio-list-title {
   font-weight: 500;
   font-size: 20px;
@@ -152,8 +242,12 @@ ol {
 /* -----------------------Footer----------------------------- */
 .footer {
   background: #2e2f42;
+  width: 1440px;
+  height: 312px;
 }
-
+.footer-container {
+  padding-top: 100px;
+}
 .footer-link {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -163,7 +257,6 @@ ol {
   text-transform: uppercase;
   color: #4d5ae5;
 }
-
 .footer-link span {
   color: #f4f4fd;
 }
@@ -172,5 +265,6 @@ ol {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  padding-top: 16px;
 }
 /*  */
