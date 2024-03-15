@@ -266,6 +266,7 @@ justify-content: center; */
 .social-list {
   display: flex;
   gap: 24px;
+  padding-left: 16px;
 }
 .social-list-item {
   width: 40px;
