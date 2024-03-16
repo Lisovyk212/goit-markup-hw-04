@@ -386,6 +386,7 @@ address {
   margin-right: 120px;
   margin-left: 156px;
 }
+
 .footer-link {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -405,6 +406,10 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+.footer-social-media {
+  display: block;
+  align-items: baseline;
 }
 .footer-media-text {
   font-weight: 500;
