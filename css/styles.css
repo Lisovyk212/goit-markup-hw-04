@@ -378,15 +378,16 @@ address {
   letter-spacing: 0.02em;
 }
 /* -----------------------Footer----------------------------- */
+.footer-blok-media {
+  background: #2e2f42;
+}
 .footer-container-blok {
   display: flex;
   align-items: baseline;
-  background: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 .footer-container-logo {
-  margin-left: 156px;
   margin-right: 120px;
 }
 .footer-link {
