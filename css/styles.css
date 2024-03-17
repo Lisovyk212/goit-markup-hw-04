@@ -327,7 +327,7 @@ address {
   column-gap: 24px;
   row-gap: 48px;
 }
-.portfolio-list-img:hover.portfolio-img-text {
+.portfolio-list-img:hover .portfolio-img-text {
   transform: translateY(0%);
 }
 .portfolio-list-item {
@@ -411,6 +411,9 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+.footer-social-media {
+  margin-right: 120px;
 }
 .footer-media-text {
   font-weight: 500;
