@@ -386,11 +386,10 @@ address {
 .footer-container-blok {
   display: flex;
   align-items: baseline;
-  margin-right: 120px;
 }
 .footer-container-logo {
-  margin-right: 120px;
   margin-left: 156px;
+  margin-right: 120px;
 }
 .footer-link {
   font-family: "Raleway", sans-serif;
@@ -411,9 +410,6 @@ address {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-}
-.footer-social-media {
-  margin-right: 120px;
 }
 .footer-media-text {
   font-weight: 500;
