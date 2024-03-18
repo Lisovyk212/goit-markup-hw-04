@@ -324,7 +324,7 @@ address {
   column-gap: 24px;
   row-gap: 48px;
 }
-.portfolio-list-img:hover .portfolio-img-text {
+.portfolio-list-item:hover .portfolio-img-text {
   transform: translateY(0%);
 }
 .portfolio-list-item {
